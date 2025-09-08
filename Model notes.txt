@@ -1,0 +1,28 @@
+Trial 13 multiple non overlapping cards with glare:
+Accuracy on tests: Correct: 31 Almost: 5 Incorrect: 11 Incorrect due to slight mask error: 6.5
+Improvement suggestions: Figure out if the synthetic glare is helping. (If it is try adding shadows), Look for biggest mask.
+Percentage = 33.5/47 = 71.3%
+
+Trial 14 (Same as 13 but without glare):
+Correct: 35 Almost: 2 Incorrect: 10 Incorrect due to slight mask error: 4
+Percentage = 36/47 = 76.6%
+Improvement Suggestions: If prediction is far off take bounding box instead without perspective transforming. (Fixes slight segmentation mask errors)
+
+Trial 15 (no glare Larger dataset with more sets allow slight card overlap 2 to 5 cards per):
+Correct: 36 Almost: 4 Incorrect: 7 Fixable by using box: 4
+Percentage: 38/47 = 80.9%
+Improvement Suggestions: Check box and mask, develop model or some other method to find correct orientation, use more backgrounds with grainy textures
+
+Trial 16 (Much larger data set 50k):
+Correct: 78 Almost: 4 Incorrect: 9 Fixable by looking at box: 4
+Percentage: 80/91 = 88% If look at box as well: 84/91 = 92.3%
+Still struggles with heavy angled pictures and borderless cards
+
+Trial 17 (Adding random noise and reduced quality):
+Correct: 90 Almost: 3 Incorrect: 13 Fixable by looking at box: 6 (Maybe find largest contour)
+Percentage = 85%
+Trying largest contour/box: 92%
+Looking at largest contour:
+Correct: 107 Almost: 3 Incorrect: 9
+Percentage: 91%
+Need to figure out borderless

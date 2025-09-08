@@ -1,0 +1,6 @@
+path: D:/ImageWarping/MTGModel
+train: D:/ImageWarping/MTGModel/images/train
+val: D:/ImageWarping/MTGModel/images/val
+
+names:
+  0: card

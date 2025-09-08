@@ -1,0 +1,6 @@
+path: D:/ImageWarping/SegmentationTraining
+train: D:/ImageWarping/SegmentationTraining/images/train
+val: D:/ImageWarping/MTGModel/SegmentationTraining/images/val
+
+names:
+  0: card

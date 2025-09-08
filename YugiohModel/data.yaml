@@ -1,0 +1,6 @@
+path: D:/ImageWarping/YugiohModel
+train: D:/ImageWarping/YugiohModel/images/train
+val: D:/ImageWarping/YugiohModel/images/val
+
+names:
+  0: card
